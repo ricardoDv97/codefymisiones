@@ -2,43 +2,43 @@
   <!-- Glow -->
   <div class="absolute left-1/2 top-40 h-96 w-96 -translate-x-1/2 rounded-full bg-sky-500/10 blur-[140px]"></div>
 
-  <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+  <div class="mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2">
     <!-- Texto -->
-    <div>
+    <div class="w-full overflow-hidden">
       <span class="inline-block rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm text-sky-300">
         🚀 Software Factory · Desarrollo Web · IT
       </span>
 
-      <!-- Título principal responsivo (text-4xl en cel, text-6xl/7xl en PC) -->
-      <h1 class="mt-6 sm:mt-8 text-4xl sm:text-5xl lg:text-7xl font-black leading-tight">
+      <!-- Título principal con text-balance / word-break para que no se desborde -->
+      <h1 class="mt-6 sm:mt-8 text-3xl xs:text-4xl sm:text-5xl lg:text-7xl font-black leading-tight break-words">
         Transformamos
         <span class="text-sky-400">ideas</span>
         en soluciones digitales.
       </h1>
 
-      <!-- Párrafo sin mención a PyMEs -->
-      <p class="mt-6 sm:mt-8 max-w-xl text-base sm:text-lg leading-7 sm:leading-8 text-slate-400">
+      <!-- Párrafo adaptado -->
+      <p class="mt-6 sm:mt-8 max-w-xl text-sm sm:text-lg leading-6 sm:leading-8 text-slate-400 break-words">
         Creamos Landing Pages, Sitios Corporativos, E-Commerce y Software Empresarial con soporte técnico especializado.
       </p>
 
-      <!-- Botones adaptados para que no se vean gigantes en celular -->
-      <div class="mt-8 sm:mt-12 flex flex-wrap gap-4">
+      <!-- Botones: Ocupan el 100% en celular (w-full) para asegurar que se puedan presionar sin fallar -->
+      <div class="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-4">
         <a
           href="https://wa.me/543765050224?text=Hola%20Codefy,%20quiero%20información."
           target="_blank"
-          class="rounded-xl bg-sky-500 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold transition hover:bg-sky-400 text-white"
+          class="w-full sm:w-auto text-center rounded-xl bg-sky-500 px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold transition hover:bg-sky-400 text-white shadow-lg"
         >
           Solicitar Presupuesto
         </a>
         <a
           href="#servicios"
-          class="rounded-xl border border-slate-700 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base transition hover:border-sky-500 text-slate-200"
+          class="w-full sm:w-auto text-center rounded-xl border border-slate-700 px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base transition hover:border-sky-500 text-slate-200 bg-[#0B1220]/50"
         >
           Ver Servicios
         </a>
       </div>
 
-      <!-- Estadísticas con tamaños adaptados -->
+      <!-- Estadísticas adaptadas -->
       <div class="mt-12 sm:mt-16 flex flex-wrap gap-8 sm:gap-12">
         <div>
           <h3 class="text-3xl sm:text-4xl font-bold text-sky-400">+50</h3>
@@ -49,7 +49,7 @@
           <p class="text-sm sm:text-base text-slate-400">Compromiso</p>
         </div>
         <div>
-          <h3 class="text-3xl sm:text-4xl font-bold text-sky-400">24/7</h3>
+          <h3 class="text-3xl sm:text-4xl font-bold text-slate-400 text-sky-400">24/7</h3>
           <p class="text-sm sm:text-base text-slate-400">Soporte</p>
         </div>
       </div>
