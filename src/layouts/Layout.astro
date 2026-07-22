@@ -1,0 +1,70 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "Codefy | Desarrollo de Software",
+  description = "Desarrollo Web, Software a Medida, Landing Pages, E-Commerce, Redes Informáticas y Soporte Técnico.",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>{title}</title>
+
+  <meta name="description" content={description} />
+
+  <meta name="theme-color" content="#050A13" />
+
+  <meta
+    name="keywords"
+    content="Desarrollo Web, Landing Page, Software, Astro, Java, Node.js, PHP, MySQL, PostgreSQL, Redes Informáticas, Reparación PC"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body class="relative bg-[#050A13] text-white font-[Inter] overflow-x-hidden">
+
+  <!-- Glow Superior -->
+  <div
+    class="pointer-events-none fixed left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-sky-500/10 blur-[180px]">
+  </div>
+
+  <!-- Glow Inferior -->
+  <div
+    class="pointer-events-none fixed bottom-0 right-0 -z-10 h-[450px] w-[450px] rounded-full bg-cyan-500/10 blur-[180px]">
+  </div>
+
+  <!-- Grid tecnológico -->
+  <div
+    class="pointer-events-none fixed inset-0 -z-20 opacity-[0.05]"
+    style="
+      background-image:
+      linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size:40px 40px;
+    ">
+  </div>
+
+  <slot />
+
+</body>
+
+</html>

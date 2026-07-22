@@ -1,0 +1,35 @@
+---
+const { title, description, icon } = Astro.props;
+---
+
+<div
+  class="group relative overflow-hidden rounded-2xl border border-slate-800 bg-[#0B1220]/80 p-7 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-sky-500 hover:shadow-[0_0_35px_rgba(14,165,233,.18)] flex flex-col justify-between"
+>
+  <!-- Glow -->
+  <div
+    class="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-sky-500/10 blur-3xl transition-all duration-300 group-hover:bg-sky-500/20">
+  </div>
+
+  <div>
+    <div
+      class="relative mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-sky-500/20 bg-sky-500/10 text-sky-400">
+      <Fragment set:html={icon} />
+    </div>
+
+    <h3 class="relative text-2xl font-bold text-slate-100">
+      {title}
+    </h3>
+
+    <p class="relative mt-4 leading-7 text-slate-400">
+      {description}
+    </p>
+  </div>
+
+  <div
+    class="relative mt-8 flex items-center text-sky-400 font-semibold text-sm">
+    Más información
+    <span class="ml-2 transition-transform group-hover:translate-x-2">
+      →
+    </span>
+  </div>
+</div>

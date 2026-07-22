@@ -1,0 +1,95 @@
+---
+import ServiceCard from "./ServiceCard.astro";
+import {
+  developmentServices,
+  supportServices,
+} from "../data/services";
+---
+
+<section
+  id="servicios"
+  class="relative py-28">
+
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="text-center">
+
+      <span
+        class="rounded-full border border-sky-500/20 bg-sky-500/10 px-5 py-2 text-sm text-sky-300">
+
+        NUESTROS SERVICIOS
+
+      </span>
+
+      <h2
+        class="mt-8 text-5xl font-black text-slate-100">
+
+        Soluciones Tecnológicas
+
+      </h2>
+
+      <p
+        class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">
+
+        Ayudamos a empresas y emprendedores a potenciar su presencia digital
+        mediante soluciones modernas, rápidas y escalables.
+
+      </p>
+
+    </div>
+
+    <!-- Desarrollo -->
+
+    <div class="mt-24">
+
+      <h3
+        class="mb-10 text-3xl font-bold text-sky-400">
+
+        Desarrollo de Software
+
+      </h3>
+
+      <div
+        class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+        {
+          developmentServices.map((service) => (
+
+            <ServiceCard {...service} />
+
+          ))
+        }
+
+      </div>
+
+    </div>
+
+    <!-- Infraestructura -->
+
+    <div class="mt-24">
+
+      <h3
+        class="mb-10 text-3xl font-bold text-sky-400">
+
+        Infraestructura IT y Soporte
+
+      </h3>
+
+      <div
+        class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+        {
+          supportServices.map((service) => (
+
+            <ServiceCard {...service} />
+
+          ))
+        }
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
